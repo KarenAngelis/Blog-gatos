@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --colors-explorer-dark: #065E7C;
+  --color-explorer-white: #F4FCFF;
+  --colors-explorer-dark-pure: #387E96;
+  --color-explorer-white-pure: #fff;
+  --color-explorer-blue: #ffffff33;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Mulish', sans-serif;
+  background-color: var(--color-explorer-white-pure);
+}
+
+#pag > * {
+  border: 1px solid red;
+} /* Pego todos os elementos dentro do id principal*/
+
+#pag {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+}
+
+.container {
+  padding: 1.6rem 2.5rem;
+  width: min(112rem, 100%);
+  margin: 0 auto;
+}
+
+header{
+  background-color: var(--colors-explorer-dark);
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+
+}
+
+.input-wrapper label{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.input-wrapper input{
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  
+  border-radius: .4rem;
+  border: 0;
+  background: var(--color-explorer-blue);
+  font-family: 'Mulish', sans-serif;
+
+  color: var(--color-explorer-white-pure);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.input-wrapper input::placeholder{
+  color: var(--color-explorer-white-pure);
+}
+
+.foto{
+  color: #fff;
+}
+
+
+
+header form{
+  flex: 1; /* Vai preencher todo o espaço pra ele */
+}
+
+.logo{
+  background-color: var(--color-explorer-white);
+  padding: 0.9rem;
+  border-radius: 50%;
+}
+
+.foto{
+  border-radius: 50%;
+  width: 4.2rem;
+  height: 4.2rem;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+
+.first-main {
+  margin: 0;
+}
+
+.first-main img {
+  display: block;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+
+
+
+.item{
+  display: flex;
+}
