@@ -14,6 +14,8 @@
   --colors-explorer-dark-pure: #387E96;
   --color-explorer-white-pure: #fff;
   --color-explorer-blue: #ffffff33;
+  --color-explorer-letter:#202024;
+  --color-explorer-letter-p:#121214;
 }
 
 body {
@@ -22,9 +24,9 @@ body {
   background-color: var(--color-explorer-white-pure);
 }
 
-#pag > * {
+/*#pag > * {
   border: 1px solid red;
-} /* Pego todos os elementos dentro do id principal*/
+}  Pego todos os elementos dentro do id principal*/
 
 #pag {
     display: grid;
@@ -38,7 +40,7 @@ body {
   margin: 0 auto;
 }
 
-header{
+header, .input-wrapper{
   background-color: var(--colors-explorer-dark);
   display: flex;
   align-items: center;
@@ -95,20 +97,53 @@ header form{
   flex-shrink: 0;
 }
 
-
-.first-main {
-  margin: 0;
+.container h1{
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 1.94rem;
+  color: var(--color-explorer-letter)
 }
 
-.first-main img {
-  display: block;
-  margin: 0;
-  flex-shrink: 0;
+.container p{
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--color-explorer-letter-p);
+  line-height: 160%;
 }
-
-
-
 
 .item{
   display: flex;
+  padding: 2rem 0 0 0;
+}
+
+.details{
+  margin: 0  0 0 1rem ;
+}
+
+.details h2{
+  color: var(--color-explorer-letter);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;  
+  margin-top: 0;
+  padding-bottom: 0.95rem ;
+}
+
+.details p{
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  width: 21.5rem;
+  line-height: 160%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: var(--colors-explorer-dark-pure);
+  color: var(--color-explorer-white-pure)
 }
