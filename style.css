@@ -22,6 +22,7 @@ body {
   font-size: 1.6rem;
   font-family: 'Mulish', sans-serif;
   background-color: var(--color-explorer-white-pure);
+  max-width: 33.0rem;  
 }
 
 /*#pag > * {
@@ -78,7 +79,6 @@ header, .input-wrapper{
 }
 
 
-
 header form{
   flex: 1; /* Vai preencher todo o espaço pra ele */
 }
@@ -97,6 +97,7 @@ header form{
   flex-shrink: 0;
 }
 
+
 .container h1{
   font-size: 2.4rem;
   font-style: normal;
@@ -104,6 +105,14 @@ header form{
   margin-top: 1.94rem;
   color: var(--color-explorer-letter)
 }
+
+.review img {
+  background-color: var(--colors-explorer-dark);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: .75rem;
+  }
 
 .container p{
   font-size: 1.6rem;
@@ -117,6 +126,14 @@ header form{
   display: flex;
   padding: 2rem 0 0 0;
 }
+
+.review img {
+  background-color: var(--colors-explorer-dark);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: .75rem;
+  }
 
 .details{
   margin: 0  0 0 1rem ;
@@ -146,4 +163,29 @@ footer {
   font-weight: 600;
   background-color: var(--colors-explorer-dark-pure);
   color: var(--color-explorer-white-pure)
+}
+
+@media (min-width:700px){
+  #pag {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+}
+
+  .container {
+    padding: 1.6rem 2.5rem;
+    width: 192rem;
+    margin: 0;
+    display: flex;
+    gap:5rem;
+  }
+
+  .container h1, p{
+    width: 80.0rem;
+  }
+
+  .first-main{
+    width: 80.3rem;
+   
+  }
 }
